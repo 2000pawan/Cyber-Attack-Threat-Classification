@@ -1,0 +1,8 @@
+Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv filter=lfs diff=lfs merge=lfs -text
+Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv filter=lfs diff=lfs merge=lfs -text
+Friday-WorkingHours-Morning.pcap_ISCX.csv filter=lfs diff=lfs merge=lfs -text
+Monday-WorkingHours.pcap_ISCX.csv filter=lfs diff=lfs merge=lfs -text
+Wednesday-workingHours.pcap_ISCX.csv filter=lfs diff=lfs merge=lfs -text
+Thursday-WorkingHours-Afternoon-Infilteration.pcap_ISCX.csv filter=lfs diff=lfs merge=lfs -text
+Thursday-WorkingHours-Morning-WebAttacks.pcap_ISCX.csv filter=lfs diff=lfs merge=lfs -text
+Tuesday-WorkingHours.pcap_ISCX.csv filter=lfs diff=lfs merge=lfs -text
