@@ -1,11 +1,9 @@
 # Cybersecurity Threat Classification using Machine Learning
 
 ## Overview
-
-This project classifies network intrusions using machine learning models. It utilizes the **CICIDS2017** dataset to detect various attack types. The models compared in this project are **Random Forest** and **Support Vector Machine (SVM)**.
+This project classifies network intrusions using machine learning models. It utilizes the **CICIDS2017** dataset to detect various attack types. The model used in this project is implemented in a **single Jupyter Notebook** file instead of separate scripts.
 
 ## Requirements
-
 Before running the code, ensure you have the following dependencies installed:
 
 ```bash
@@ -21,62 +19,33 @@ pip install -r requirements.txt
 ## Running the Code
 
 1. **Clone the Repository**
-
    ```bash
    git clone https://github.com/2000pawan/Cyber-Attack-Threat-Classification.git
    ```
 
-2. **Download and Extract the Dataset**
-
+2. **Download and Extract the Dataset**  
    - Download the **CICIDS2017** dataset from [here](https://www.unb.ca/cic/datasets/ids-2017.html).
    - Extract the dataset into the `data/` directory.
 
-3. **Preprocess the Data**
-
-   - Clean missing values and normalize numerical features.
-   - Encode categorical features using one-hot encoding.
-   - Balance the dataset using **SMOTE** to handle class imbalances.
-
+3. **Run the Jupyter Notebook**
+   - Open the Jupyter Notebook environment:
    ```bash
-   python preprocess.py
+   jupyter notebook
    ```
+   - Navigate to the **Cyber_attack.ipynb** file and execute all cells sequentially.
 
-4. **Train the Models**
-
-   - Train both **Random Forest** and **SVM** classifiers.
-   - Perform **feature selection** using **Recursive Feature Elimination (RFE)**.
-   - Optimize hyperparameters using **Grid Search**.
-
-   ```bash
-   python train.py
-   ```
-
-5. **Evaluate the Models**
-
-   - Compute evaluation metrics: **accuracy, precision, recall, F1-score**.
-   - Compare model performance and analyze misclassifications.
-
-   ```bash
-   python evaluate.py
-   ```
-
-6. **Visualizing Results**
-
-   - Generate confusion matrices and ROC curves.
-   - Display feature importance plots.
-
-   ```bash
-   python visualize_results.py
-   ```
+## Notebook Structure
+- **Data Preprocessing**: Cleans missing values, normalizes numerical features, encodes categorical data, and balances the dataset using **SMOTE**.
+- **Model Training**: Trains **Random Forest** and **SVM** classifiers with feature selection and hyperparameter tuning.
+- **Evaluation**: Computes accuracy, precision, recall, and F1-score to compare model performance.
+- **Visualization**: Generates confusion matrices and ROC curves for model assessment.
 
 ## Results Summary
-
 - **Random Forest** outperformed **SVM** in accuracy and generalization.
 - **Feature selection** improved computational efficiency.
 - **Future enhancements** could involve deep learning models for better performance.
 
 ## Future Work
-
 - Implementing **deep learning models** like CNNs or LSTMs.
 - Exploring **ensemble learning** approaches.
 - Improving detection for minority attack classes.
@@ -84,8 +53,4 @@ pip install -r requirements.txt
 For any issues, please create an issue on the repository.
 
 ---
-
 **Author:** Pawan Yadav
-
-
-
