@@ -1,6 +1,4 @@
-# Cyber-Attack-Threat-Classification
-Cyber Attack Threat Classification using CICIDS2017 dataset.
-# e Cybersecurity Threat Classification using Machine Learning
+# Cybersecurity Threat Classification using Machine Learning
 
 ## Overview
 
